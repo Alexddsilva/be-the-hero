@@ -2,6 +2,8 @@ const connection = require('../database/connection');
 
 module.exports = {
   async create(req, res) {
+    console.log('Rota Sessions Acionada.');
+    
     const { id } = req.body;
 
     const ong = await connection('ongs')
